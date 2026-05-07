@@ -1,0 +1,12 @@
+class Time:
+ def __init__(self,seconds):
+  self.seconds=seconds
+ def convert(self):
+  minutes=self.seconds/60
+  hours=self.seconds/3600
+  print("seconds:",self.seconds)
+  print("minutes:",minutes)
+  print("hours:",hours)
+s=int(input())
+t=Time(s)
+t.convert()
